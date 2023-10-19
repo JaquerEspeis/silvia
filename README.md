@@ -1,15 +1,14 @@
 # Deploy Cluster
-Add token to env
+```
+cp env.example env
+```
+Modify token in the env file
 
 ```
 source env
 ```
 
 ```
+terraform plan
 terraform apply
-```
-
-# Install and configure sonarqube
-```
-helm -n sonarqube install tools-sonarqube ./ --create-namespace --wait
 ```
